@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+   <h1>Nacionalidade</h1> 
+   <p>Em qual país você vive? <input type="text" name="pais" id="pais"> <input type="button" value="teste" onclick="teste()"></p>
+   <div id="msg">
+       Resultado:
+   </div>
+   <script>
+       function teste() {
+           var lugar = document.getElementById('pais')
+           if (lugar == brasil){
+               mgs.innerText = `Morando no ${lugar} você é conterrâneo!`
+           }else {
+               msg.innerText = `Morando no ${lugar} você é estrangeiro!`
+           }
+       }
+   </script>
+</body>
+</html>
